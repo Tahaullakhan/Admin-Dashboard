@@ -1,0 +1,333 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+/* main */
+
+.main{
+    display: flex;
+}
+#menu{
+    height: 100vh;
+    width:260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(/img/breadcrumb-bg.jpg) no-repeat center center/cover;
+    position: relative;
+    color: white;
+
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    *{
+        z-index: 1;
+    }
+
+}
+
+
+#menu #logo{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 15px 0px;
+}
+
+#menu .options{
+
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    
+
+    a{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        padding: 15px 0px;
+        display: flex;
+        width: 260px;
+        justify-content: center;
+
+
+
+        i{
+            padding-right: 8px;
+        }
+
+    }
+
+    #is{
+        background-color: rgba(71, 79, 84, 0.753);
+        color:orange;
+    }
+
+}
+
+
+.content{
+    background-color: rgb(245, 245, 234);
+    width: 100%;
+
+    background-image: url('coffee\ background.jpg');
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent image from repeating */
+    color: white; /* Change text color for better contrast */
+}
+.content .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding:0px 25px;
+    font-size: 20px;
+    color: gray;
+    background-color: rgb(60 ,10 ,0 ,91%);
+
+    
+
+    .icons{
+        display: flex;
+        gap: 15px;
+        align-items: center;
+
+        input{
+            border: none;
+            border-bottom: 2px solid white;
+            padding:5px;
+            font-size: 16px;
+            background: transparent;
+        }
+        i{
+            color: gray;
+        }
+    }
+
+}
+
+
+/* content  section top */
+.content .section .top{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin:50px 30px;
+
+    .shell{
+        margin:20px;
+        background-color: white;
+        border: transparent;
+        border-radius: 5px;
+        padding:10px 15px;
+
+        .icon{
+            display: flex;
+            justify-content: space-between;
+            
+
+            span{
+                height: 70px;
+                width: 70px;
+                position: relative;
+                bottom: 30px;
+                border: transparent;
+                border-radius: 5px;
+                
+                
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+                i{
+                    font-size: 33px;
+                    color:white;
+                }
+            }
+
+            .p{
+                color:gray;
+                h2{
+                    padding:8px 0px;
+                }
+            }
+        }
+
+        
+    }
+}
+
+
+.content .section .top .shell1 span{
+    background-color: rgb(255, 174, 0);
+}
+.content .section .top .shell2 span{
+    background-color:rgb(7, 161, 27) ;
+}
+.content .section .top .shell3 span{
+    background-color: rgb(255, 47, 0);
+}
+.content .section .top .shell4 span{
+    background-color:rgb(0, 213, 255) ;
+}
+
+
+.btm{
+    color:gray;
+    padding:10px 0px;
+}
+
+
+.content .section .mid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin:15px;
+    
+    .slot{
+        margin:20px;
+        background-color: white;
+        border: transparent;
+        border-radius: 10px;
+        padding:15px;
+        display: flex;
+        flex-direction: column;
+        
+
+
+        .img{
+            position: relative;
+            top:-40px;
+            display: flex;
+            justify-content: center;
+            img{
+                border: transparent;
+                border-radius: 8px;
+            }  
+        }
+        
+        h3,p{
+            color: gray;
+        }
+        hr{
+            margin:8px 0px;
+        }
+         
+    }
+}
+
+.content footer{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+    
+
+    ul{
+        display: flex;
+        li{
+            list-style: none;
+            
+            a{
+                text-decoration: none;
+                color: gray;
+                padding:0px 15px
+            }
+        }
+    }
+
+    p{
+        color: gray;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+    background-image: url('coffee\ background.jpg');
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent image from repeating */
+    color: white;
+}
+
+.main {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.chart-container {
+    width: 80%;
+    max-width: 600px; /* Limit max width */
+    margin: 20px auto; /* Center the chart horizontally */
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+/* res */
+
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+    }
+
+    #menu {
+        width: 100%;
+        height: auto;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .content .section .top {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .content .section .mid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .chart-container {
+        width: 100%;
+    }
+}

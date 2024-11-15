@@ -1,0 +1,14 @@
+{
+  "customer": [
+    {
+      "fname": "Frappe",
+      "quantity": "4cup",
+      "price": "1.5$",
+      "cname": "Ashish",
+      "omode": "Online",
+      "bill": "Unpaid",
+      "pmode": "Card",
+      "id": "ff23"
+    }
+  ]
+}
